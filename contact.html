@@ -4,9 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5ffbbbe9fc.js" crossorigin="anonymous"></script>
     <title>Contact</title>
 </head>
 <body>
-    
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <p>Planted</p>
+            </div>
+
+            <nav class="headerNav">
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="./blog.html">blog</a></li>
+                    <li><a href="./contact.html">contact</a></li>
+                </ul>
+            </nav>
+
+            <h1>Get in <span>Touch</span></h1>
+        </div>
+    </header>
+
+    <main>
+        <form action="submit" method="POST" class="commentForm" autocomplete="off" name="commentForm">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Email address</label>
+            <input type="email" name="email" id="email"> 
+            <textarea name="commentBox" id="commentBox" cols="30" rows="10"></textarea>
+            <button type="submit">Post Comment</button>
+        </form>
+
+        <section class="contacts">
+            <div class="socialLinks">
+                <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="#phoneNumber"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <h2>info@email.com</h2>
+            <p>123-456-7890</p>
+            <p>123 Queen Street West, Unit 10</p>
+            <p>Toronto, Ontario</p>
+            <p>M5V2D5</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright @ 2018 HackerYou</p>
+    </footer>
 </body>
 </html>
