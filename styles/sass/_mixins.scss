@@ -1,0 +1,6 @@
+@mixin typography($fontSize : 20, $lineHeight : 1.15, $fontWeight : 700, $fontFamily : $main-font) {
+    font-size: ($fontSize/20) * 1rem;
+    line-height: $lineHeight;
+    font-weight: $fontWeight;
+    font-family: $fontFamily; 
+  }

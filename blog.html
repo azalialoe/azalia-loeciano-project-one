@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Blog</title>
 </head>
 
 <body>
 
     <header>
-        <div class="wrapper">
+        <div class="wrapper blog">
             <div class="logo">
                 <p>Planted</p>
             </div>
 
             <nav class="headerNav">
                 <ul>
-                    <li><a href="#home">home</a></li>
-                    <li><a href="#about">about</a></li>
+                    <li><a href="./index.html">home</a></li>
+                    <li><a href="./index.html">about</a></li>
                     <li><a href="./blog.html">blog</a></li>
                     <li><a href="./contact.html">contact</a></li>
                 </ul>
@@ -29,7 +33,7 @@
     </header>
 
     <aside>
-        <img src="./project-1-planted/project-1-planted/planted-final-assets/planted-final-assets/side-bar-image.jpg" alt="an opened wooden window">
+        <img src="./planted-final-assets/side-bar-image.jpg" alt="an opened wooden window">
         <h2>About Planted</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi alias aspernatur eligendi. <a href="./index.html">Find out more.</a></p>
 
@@ -51,10 +55,10 @@
     </aside>
 
     <main>
-        <img src="./project-1-planted/project-1-planted/planted-final-assets/planted-final-assets/post-image.jpg" alt="a stem with leaves on it">
+        <img src="./planted-final-assets/post-image.jpg" alt="a stem with leaves on it">
         <div class="wrapper blogPost">
             <h2>Our mission at Planted</h2>
-            <h3>Monday January 21th, 2019 by <a href="#authorProfile">Yousra</a></h3>
+            <h3>Monday January 21th, 2019 by Yousra</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi mollitia deserunt, saepe doloremque, rerum neque recusandae vitae officiis doloribus nobis quidem cumque consequatur vel consectetur facere nisi debitis quibusdam possimus!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, eveniet? Perferendis odio consequatur fuga! Voluptates id facilis dolor aperiam dignissimos ex at aut sint culpa magnam. Dolor reiciendis explicabo cumque!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta numquam quibusdam molestias fuga quia rem deserunt molestiae voluptatibus, vel ab quasi fugiat veritatis dolore nisi assumenda eligendi nulla animi eos, nobis, sit id? Consequuntur enim sapiente itaque, magni iure in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, officiis. Laudantium sequi quam praesentium, quo assumenda libero consequatur pariatur quaerat delectus esse perferendis. Ratione cum deserunt cupiditate corrupti corporis sequi?</p>
@@ -64,23 +68,23 @@
         <div class="wrapper comments">
             <h2>Comments:</h2>
             <div class="commenters">
-                <img src="./project-1-planted/project-1-planted/planted-final-assets/planted-final-assets/profile-image.jpg" alt="profile picture of a guy">
+                <img src="./planted-final-assets/profile-image.jpg" alt="profile picture of a guy">
                 <h3>Tuesday October 9th, 2018 by Jeremy</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex pariatur nobis nostrum iusto possimus, neque dicta exercitationem error animi veniam rerum ea ad culpa doloremque enim dignissimos similique, repellendus nam.</p>
             </div>
             <div class="commenters">
-                <img src="./project-1-planted/project-1-planted/planted-final-assets/planted-final-assets/profile-image-2.jpg" alt="profile picture of a woman wearing a black hat">
+                <img src="./planted-final-assets/profile-image-2.jpg" alt="profile picture of a woman wearing a black hat">
                 <h3>Wednesday October 10th, 2018 by Julia</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi corrupti possimus tempora perferendis nihil tenetur quaerat dolorem nesciunt veniam. Error quisquam ipsa hic dolores laborum commodi repudiandae earum, repellendus nobis?</p>
             </div>
         </div>
 
-        <form action="submit" method="POST" class="commentForm" autocomplete="off" name="commentForm">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name">
-            <label for="email">Email address</label>
-            <input type="email" name="email" id="email"> 
-            <textarea name="commentBox" id="commentBox" cols="30" rows="10"></textarea>
+        <form action="submit" method="POST" class="commentForm wrapper" autocomplete="off" name="commentForm">
+            <label for="name" class="sr-only">Name</label>
+            <input type="text" name="name" id="name" placeholder="Name">
+            <label for="email" class="sr-only">Email address</label>
+            <input type="email" name="email" id="email" placeholder="Email address"> 
+            <textarea name="commentBox" id="commentBox" cols="30" rows="10" placeholder="Comment"></textarea>
             <button type="submit">Post Comment</button>
         </form>
     </main>

@@ -1,0 +1,62 @@
+@import 'mixins';
+
+
+h1 {
+    @include typography(166, $fontWeight:400);
+}
+
+.contact h1,
+.blog h1 {
+    @include typography(80, 92px);
+}
+
+.home h2 {
+    @include typography(56.3);
+    text-align: center;
+    letter-spacing: 1.3px;
+}
+
+.blogPost h2 {
+    @include typography(43);
+    letter-spacing: 1.3px;
+}
+
+.about h2 {
+    @include typography(42);
+    letter-spacing: 1px;
+}
+
+.moreInfo h2,
+.links h2,
+.comments h2,
+.contacts h2 {
+    @include typography(32);
+    letter-spacing: 1px; 
+}
+
+aside h2,
+.comments h3 {
+    @include typography($lineHeight:32px);
+}
+
+button {
+    @include typography($lineHeight:32px);
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+aside a,
+.blogPost h3,
+.commentForm::placeholder { 
+    @include typography ($lineHeight:32px, $fontWeight:300);
+}
+
+aside a,
+.blogPost h3 {
+    font-style: italic;
+}
+
+p {
+    @include typography ($lineHeight:32px, $fontWeight:300, $fontFamily : $secondary-font);
+}

@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5ffbbbe9fc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Contact</title>
 </head>
 <body>
     <header>
-        <div class="wrapper">
+        <div class="wrapper contact">
             <div class="logo">
                 <p>Planted</p>
             </div>
 
             <nav class="headerNav">
                 <ul>
-                    <li><a href="#home">home</a></li>
-                    <li><a href="#about">about</a></li>
+                    <li><a href="./index.html">home</a></li>
+                    <li><a href="./index.html">about</a></li>
                     <li><a href="./blog.html">blog</a></li>
                     <li><a href="./contact.html">contact</a></li>
                 </ul>
@@ -28,16 +32,16 @@
     </header>
 
     <main>
-        <form action="submit" method="POST" class="commentForm" autocomplete="off" name="commentForm">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name">
-            <label for="email">Email address</label>
-            <input type="email" name="email" id="email"> 
-            <textarea name="commentBox" id="commentBox" cols="30" rows="10"></textarea>
+        <form action="submit" method="POST" class="commentForm wrapper" autocomplete="off" name="commentForm">
+            <label for="name" class="sr-only">Name</label>
+            <input type="text" name="name" id="name" placeholder="Name">
+            <label for="email" class="sr-only">Email address</label>
+            <input type="email" name="email" id="email" placeholder="Email address"> 
+            <textarea name="commentBox" id="commentBox" cols="30" rows="10" placeholder="Comment"></textarea>
             <button type="submit">Post Comment</button>
         </form>
 
-        <section class="contacts">
+        <section class="wrapper contacts">
             <div class="socialLinks">
                 <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
