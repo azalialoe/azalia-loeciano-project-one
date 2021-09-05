@@ -1,0 +1,20 @@
+.indexHeader {
+    background-image: url(./scss-images/home-image-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+
+    h1 {
+        color: #fff;
+        padding-left: 30%;
+        line-height: 0.9;
+        padding-top: 5%;
+    }
+
+    span {
+        display: block;
+        color: $sunnyYellow;
+    }
+}
+

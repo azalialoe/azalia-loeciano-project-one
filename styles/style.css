@@ -250,11 +250,26 @@ img {
   display: block;
 }
 
+.logo p {
+  font-size: 2rem;
+  line-height: 1.15;
+  font-weight: 400;
+  font-family: "Josefin Sans", sans-serif;
+}
+
 h1 {
   font-size: 8.3rem;
   line-height: 1.15;
   font-weight: 400;
   font-family: "Josefin Sans", sans-serif;
+}
+
+.headerNav ul li {
+  font-size: 1rem;
+  line-height: 1.15;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
 }
 
 .contact h1,
@@ -366,4 +381,56 @@ p {
   line-height: 32px;
   font-weight: 300;
   font-family: "Roboto", sans-serif;
+}
+
+.blog,
+.contact {
+  background-color: #2C2C2C;
+}
+
+.headerNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 8vh;
+}
+.headerNav ul li {
+  list-style: none;
+  padding-right: 2rem;
+}
+.headerNav a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo p {
+  color: white;
+}
+
+.logo,
+.headerNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.indexHeader {
+  background-image: url(./scss-images/home-image-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+}
+.indexHeader h1 {
+  color: #fff;
+  padding-left: 30%;
+  line-height: 0.9;
+  padding-top: 5%;
+}
+.indexHeader span {
+  display: block;
+  color: #F8E71C;
 }

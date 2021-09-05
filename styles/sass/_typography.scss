@@ -1,8 +1,15 @@
 @import 'mixins';
 
-
+.logo p {
+    @include typography(40, $fontWeight:400);
+}
 h1 {
     @include typography(166, $fontWeight:400);
+}
+
+.headerNav ul li {
+    @include typography();
+    text-transform: uppercase;
 }
 
 .contact h1,
@@ -58,5 +65,5 @@ aside a,
 }
 
 p {
-    @include typography ($lineHeight:32px, $fontWeight:300, $fontFamily : $secondary-font);
+    @include typography ($lineHeight:32px, $fontWeight:300, $fontFamily : $secondaryFont);
 }
