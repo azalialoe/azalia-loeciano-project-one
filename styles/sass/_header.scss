@@ -27,3 +27,14 @@
     display: flex;
     align-items: center;
 }
+
+.headerBox {
+    position: relative;
+}
+
+.headerBox img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}

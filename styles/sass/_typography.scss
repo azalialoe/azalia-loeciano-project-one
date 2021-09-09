@@ -12,8 +12,8 @@ h1 {
     text-transform: uppercase;
 }
 
-.contact h1,
-.blog h1 {
+.contactHeading h1,
+.blogHeading h1 {
     @include typography(80, 92px);
 }
 
@@ -55,7 +55,7 @@ button {
 
 aside a,
 .blogPost h3,
-.commentForm::placeholder { 
+::placeholder { 
     @include typography ($lineHeight:32px, $fontWeight:300);
 }
 
@@ -67,3 +67,4 @@ aside a,
 p {
     @include typography ($lineHeight:32px, $fontWeight:300, $fontFamily : $secondaryFont);
 }
+

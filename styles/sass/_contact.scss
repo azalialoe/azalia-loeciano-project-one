@@ -1,0 +1,26 @@
+.contactHeading {
+    background-image: url(./scss-images/contact-header-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+
+    h1 {
+        color: $sunnyYellow;
+        margin-top: 0;
+        padding-top: 20%;
+        padding-left: 5%;
+
+        span {
+            display: block;
+        }
+    }
+}
+
+main {
+    background-color: $offWhite;
+
+    i {
+        color: $green;
+    }
+}
