@@ -1,0 +1,270 @@
+@media (max-width: 1000px) {
+    // ----- index -------
+
+    .indexHeader {
+        height: 50vh;
+    }
+
+    .indexHeader h1 {
+        padding: 0;
+    }
+
+    .indexHeader img {
+        max-width: 50%;
+    }
+
+    .about {
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+
+    .about .aboutFlex {
+        gap: 7%;
+    }
+
+    .gallery {
+        flex-direction: column;
+        gap: 2rem;
+        width: fit-content;
+    }
+
+    // --- header  ---
+
+    .headerNav {
+        height: 4vh;
+    }
+
+    // ----- blog -----
+
+    .blogHeading {
+        height: 40vh;
+    }
+
+    .blogBody {
+        flex-direction: column;
+    }
+
+    aside {
+        background-color: $offWhite;
+        width: 100%;
+        margin: 3%;
+        display: flex;
+        gap: 3rem;
+        padding: 2rem;
+    }
+
+    aside img {
+        position: static;
+        width: 45%;
+        height: 45%;
+    }
+
+    .blogImg {
+        display: inline;
+        margin: 0;
+    }
+
+    .blogImg img {
+        box-shadow: none;
+        width: 100%;
+    }
+    
+    .blogContent {
+        border: none;
+        padding: 0;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .comments {
+        float: none;
+        width: 90%;
+    }
+
+    .blogBackground form {
+        float: none;
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    // ----- contact -----
+
+    .contactBackground form {
+        bottom: -3rem;
+    }
+
+    .contactBackground .contacts {
+        margin-bottom: 16%;
+    }
+}
+
+@media (max-width: 770px) {
+    // ----- general header style -----
+
+    .logo p {
+        font-size: 30px;
+    }
+
+    .headerNav ul li  {
+        font-size: 16px;
+        padding: 3%;
+    }
+
+    // ----- index -----
+
+    .indexHeader h1 {
+        font-size: 140px;
+    }
+
+    .moreInfo {
+        flex-direction: column;
+        height: 100%;
+        margin: 5%;
+    }
+
+    .moreInfoImg1,
+    .moreInfoImg2 {
+        width: 100%;
+    }
+
+    .moreInfoImg1 img,
+    .moreInfoImg2 img {
+        box-shadow: none;
+        position: static;
+    }
+
+    .moreInfoFlex1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .moreInfoFlex2 {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        margin-top: 5%;
+    }
+
+    .moreInfoText1,
+    .moreInfoText2 {
+        padding: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .links .linksGrid {
+        grid-template-columns: none;
+        grid-template-rows: repeat(4, 300px);
+    }
+
+    .about .aboutFlex {
+        flex-direction: column;
+    }
+
+    .aboutText {
+        text-align: center;
+    }
+
+    // ----- contact -----
+
+    .contactHeading {
+        height: 40vh;
+    }
+    .contactBackground form {
+        box-shadow: none;
+        position: static;
+        width: 90%;
+        margin-top: 5%;
+    }
+
+    .contactBackground .contacts {
+        margin-top: 5%;
+        margin-bottom: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 678px) {
+    // ----- index ---- 
+
+    .indexHeader h1 {
+        font-size: 120px;
+    }
+
+    .about .aboutFlex {
+        height: 80vh;
+    }
+}
+
+@media (max-width: 570px) {
+
+    // ----- index -----
+    .indexHeader h1 {
+        font-size: 100px;
+        margin-top: 30%;
+    }
+
+    .indexHeader img {
+        visibility: hidden;
+    }
+
+    // ----- blog ----- 
+
+    .blogHeading {
+        height: 30vh;
+    }
+
+    aside {
+        flex-direction: column;
+    }
+
+    aside img {
+        width: 100%;
+    }
+
+    .commenters {
+        grid-template-columns: 1fr 3fr;
+        gap: 2%;
+    }
+}
+
+@media (max-width: 474px) {
+
+    //----- header -----
+    
+    .headerNav {
+        height: 7vh;
+        flex-wrap: wrap;
+        flex-shrink: 1;
+    }
+
+    .headerNav ul {
+        padding-left: 10px;
+    }
+
+    .headerNav ul li {
+        font-size: 14px;
+    }
+
+    .logo p {
+        font-size: 20px;
+    }
+
+    // ----- index -----
+
+    .indexHeader h1 {
+        font-size: 60px;
+        margin-top: 30%;
+    }
+
+    .links .linksGrid {
+        grid-template-rows: repeat(4, 400px);
+    }
+
+    .about .aboutFlex {
+        height: 100%;
+    }
+
+    .about .aboutFlex img {
+        box-shadow: none;
+    }
+}

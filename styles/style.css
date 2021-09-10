@@ -243,6 +243,7 @@ html {
 
 html {
   font-size: 125%;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -408,6 +409,14 @@ p {
 .headerNav a {
   color: white;
   text-decoration: none;
+}
+.headerNav a:hover,
+.headerNav a:focus {
+  color: #F8E71C;
+}
+
+.subMenu {
+  padding: 0;
 }
 
 .logo p {
@@ -804,4 +813,280 @@ form {
   position: relative;
   right: -20%;
   bottom: 15rem;
+}
+
+@media (max-width: 1000px) {
+  .indexHeader {
+    height: 50vh;
+  }
+
+  .indexHeader h1 {
+    padding: 0;
+  }
+
+  .indexHeader img {
+    max-width: 50%;
+  }
+
+  .about {
+    padding-top: 5%;
+    padding-bottom: 10%;
+  }
+
+  .about .aboutFlex {
+    gap: 7%;
+  }
+
+  .gallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .headerNav {
+    height: 4vh;
+  }
+
+  .blogHeading {
+    height: 40vh;
+  }
+
+  .blogBody {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  aside {
+    background-color: #F0EFED;
+    width: 100%;
+    margin: 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 3rem;
+    padding: 2rem;
+  }
+
+  aside img {
+    position: static;
+    width: 45%;
+    height: 45%;
+  }
+
+  .blogImg {
+    display: inline;
+    margin: 0;
+  }
+
+  .blogImg img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: 100%;
+  }
+
+  .blogContent {
+    border: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .comments {
+    float: none;
+    width: 90%;
+  }
+
+  .blogBackground form {
+    float: none;
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .contactBackground form {
+    bottom: -3rem;
+  }
+
+  .contactBackground .contacts {
+    margin-bottom: 16%;
+  }
+}
+@media (max-width: 770px) {
+  .logo p {
+    font-size: 30px;
+  }
+
+  .headerNav ul li {
+    font-size: 16px;
+    padding: 3%;
+  }
+
+  .indexHeader h1 {
+    font-size: 140px;
+  }
+
+  .moreInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    margin: 5%;
+  }
+
+  .moreInfoImg1,
+.moreInfoImg2 {
+    width: 100%;
+  }
+
+  .moreInfoImg1 img,
+.moreInfoImg2 img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    position: static;
+  }
+
+  .moreInfoFlex1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .moreInfoFlex2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    margin-top: 5%;
+  }
+
+  .moreInfoText1,
+.moreInfoText2 {
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+
+  .links .linksGrid {
+    grid-template-columns: none;
+    grid-template-rows: repeat(4, 300px);
+  }
+
+  .about .aboutFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .aboutText {
+    text-align: center;
+  }
+
+  .contactHeading {
+    height: 40vh;
+  }
+
+  .contactBackground form {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    position: static;
+    width: 90%;
+    margin-top: 5%;
+  }
+
+  .contactBackground .contacts {
+    margin-top: 5%;
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 678px) {
+  .indexHeader h1 {
+    font-size: 120px;
+  }
+
+  .about .aboutFlex {
+    height: 80vh;
+  }
+}
+@media (max-width: 570px) {
+  .indexHeader h1 {
+    font-size: 100px;
+    margin-top: 30%;
+  }
+
+  .indexHeader img {
+    visibility: hidden;
+  }
+
+  .blogHeading {
+    height: 30vh;
+  }
+
+  aside {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  aside img {
+    width: 100%;
+  }
+
+  .commenters {
+    grid-template-columns: 1fr 3fr;
+    gap: 2%;
+  }
+}
+@media (max-width: 474px) {
+  .headerNav {
+    height: 7vh;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+  }
+
+  .headerNav ul {
+    padding-left: 10px;
+  }
+
+  .headerNav ul li {
+    font-size: 14px;
+  }
+
+  .logo p {
+    font-size: 20px;
+  }
+
+  .indexHeader h1 {
+    font-size: 60px;
+    margin-top: 30%;
+  }
+
+  .links .linksGrid {
+    grid-template-rows: repeat(4, 400px);
+  }
+
+  .about .aboutFlex {
+    height: 100%;
+  }
+
+  .about .aboutFlex img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
 }
