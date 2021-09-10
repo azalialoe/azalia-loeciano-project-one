@@ -55,7 +55,8 @@ button {
 
 aside a,
 .blogPost h3,
-::placeholder { 
+.commentForm input::placeholder,
+#commentBox::placeholder { 
     @include typography ($lineHeight:32px, $fontWeight:300);
 }
 

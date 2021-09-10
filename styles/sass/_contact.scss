@@ -17,10 +17,21 @@
     }
 }
 
-main {
+.contactBackground {
     background-color: $offWhite;
 
     i {
         color: $green;
+        padding-right: 2rem;
+    }
+
+    .contacts {
+        margin-top: -20%;
+        margin-bottom: 10%;
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        
     }
 }

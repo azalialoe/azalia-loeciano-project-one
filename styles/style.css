@@ -340,28 +340,28 @@ button {
   text-transform: capitalize;
 }
 
-::-webkit-input-placeholder {
+.commentForm input::-webkit-input-placeholder, #commentBox::-webkit-input-placeholder {
   font-size: 1rem;
   line-height: 32px;
   font-weight: 300;
   font-family: "Josefin Sans", sans-serif;
 }
 
-::-moz-placeholder {
+.commentForm input::-moz-placeholder, #commentBox::-moz-placeholder {
   font-size: 1rem;
   line-height: 32px;
   font-weight: 300;
   font-family: "Josefin Sans", sans-serif;
 }
 
-:-ms-input-placeholder {
+.commentForm input:-ms-input-placeholder, #commentBox:-ms-input-placeholder {
   font-size: 1rem;
   line-height: 32px;
   font-weight: 300;
   font-family: "Josefin Sans", sans-serif;
 }
 
-::-ms-input-placeholder {
+.commentForm input::-ms-input-placeholder, #commentBox::-ms-input-placeholder {
   font-size: 1rem;
   line-height: 32px;
   font-weight: 300;
@@ -370,7 +370,8 @@ button {
 
 aside a,
 .blogPost h3,
-::placeholder {
+.commentForm input::placeholder,
+#commentBox::placeholder {
   font-size: 1rem;
   line-height: 32px;
   font-weight: 300;
@@ -421,17 +422,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.headerBox {
-  position: relative;
-}
-
-.headerBox img {
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 1;
 }
 
 .indexHeader {
@@ -643,10 +633,10 @@ footer p {
   padding-left: 5%;
 }
 
-body {
+.blogBackground {
   background-color: #F0EFED;
 }
-body h3 {
+.blogBackground h3 {
   color: #074115;
 }
 
@@ -709,6 +699,7 @@ aside img {
   width: 50%;
   float: right;
   padding-right: 3%;
+  margin-top: 3%;
 }
 
 .commenters {
@@ -745,19 +736,72 @@ footer,
   display: block;
 }
 
-main {
+.contactBackground {
   background-color: #F0EFED;
 }
-main i {
+.contactBackground i {
   color: #0E902D;
+  padding-right: 2rem;
+}
+.contactBackground .contacts {
+  margin-top: -20%;
+  margin-bottom: 10%;
+}
+.contactBackground .contacts p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 input {
   border: 0;
-  background-color: #F0EFED;
   border-bottom: 2px solid #0E902D;
+  padding: 20px 20px;
+  width: 49%;
+  margin-bottom: 2%;
 }
 
-#name {
-  text-align: center;
+textarea {
+  resize: none;
+  border: 2px solid #0E902D;
+  width: 100%;
+  height: 200px;
+  padding: 15px;
+}
+
+form button {
+  width: 100%;
+  border: 0;
+  margin-top: 2%;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blogBackground form {
+  width: 45%;
+  float: right;
+  margin: 5% 5% 5% 0;
+}
+.blogBackground form input,
+.blogBackground form textarea {
+  background: #F0EFED;
+}
+
+.contactBackground form {
+  background-color: white;
+  padding: 5%;
+  -webkit-box-shadow: -20px 20px #F8E71C;
+          box-shadow: -20px 20px #F8E71C;
+  width: 50%;
+  position: relative;
+  right: -20%;
+  bottom: 15rem;
 }

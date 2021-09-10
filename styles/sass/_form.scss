@@ -1,13 +1,51 @@
+// general form style
 input {
     border: 0;
-    background-color: $offWhite;
     border-bottom: 2px solid $green;
+    padding: 20px 20px;
+    width: 49%;
+    margin-bottom: 2%;
+}
+
+textarea {
+    resize: none;
+    border: 2px solid $green;
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+}
+
+form button {
+    width: 100%;
+    border: 0;
+    margin-top: 2%;
 }
 
 form {
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-#name {
-    text-align: center;
+// blog page form specific style
+.blogBackground form {
+    width: 45%;
+    float: right;
+    margin: 5% 5% 5% 0;
+
+    input,
+    textarea {
+        background: $offWhite;
+    }
+}
+
+// contact page form specific style
+.contactBackground form {
+    background-color: white;
+    padding: 5%;
+    box-shadow: -20px 20px $sunnyYellow;
+    width: 50%;
+    position: relative;
+    right: -20%;
+    bottom: 15rem;
 }

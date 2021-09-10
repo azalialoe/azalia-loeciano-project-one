@@ -12,7 +12,7 @@
     }
 }
 
-body {
+.blogBackground {
     background-color: $offWhite;
 
     h3 {
@@ -73,6 +73,7 @@ aside {
     width: 50%;
     float: right;
     padding-right: 3%;
+    margin-top: 3%;
 }
 .commenters {
     display: grid;
@@ -92,3 +93,4 @@ footer,
 .commentForm {
     clear: both;
 }
+
